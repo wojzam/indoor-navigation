@@ -1,0 +1,28 @@
+### Get all topics
+GET http://localhost:8080/api/v1/topic
+Accept: application/json
+
+### Get a topic by ID
+GET http://localhost:8080/api/v1/topic/3fa85f64-5717-4562-b3fc-2c963f66afa6
+Accept: application/json
+
+### Create a new topic
+POST http://localhost:8080/api/v1/topic
+Content-Type: application/json
+
+{
+  "title": "Test Topic",
+  "description": "This is a test topic"
+}
+
+### Update existing topic by ID
+PUT http://localhost:8080/api/v1/topic/3fa85f64-5717-4562-b3fc-2c963f66afa6
+Content-Type: application/json
+
+{
+  "title": "Updated Test Topic",
+  "description": "Updated description"
+}
+
+### Delete a topic by ID
+DELETE http://localhost:8080/api/v1/topic/3fa85f64-5717-4562-b3fc-2c963f66afa6
